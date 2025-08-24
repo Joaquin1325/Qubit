@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("Img/CORRE\ BOSCO\ \(1\).png") no-repeat center center fixed;
+  background-size: cover; /* hace que la imagen cubra todo */
+  height: 100vh;          /* ocupa toda la altura de la pantalla */
+}
+
+
+/* Contenedor */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+header h1 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+header .white {
+  color: white;
+}
+
+header .pink {
+  color: #e61414;
+  font-size: 120px;
+  letter-spacing: -5px;
+  background: linear-gradient(to bottom, #e60606, #e90a0a 70%, transparent);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitulo {
+  font-size: 40px;
+  letter-spacing: 15px;
+  margin-top: -20px;
+}
+
+/* Imagen central */
+.imagen-central img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  z-index: 2;
+}
+
+/* Eventos */
+.evento {
+  position: absolute;
+  width: 250px;
+  padding: 20px;
+  text-align: left;
+}
+
+.evento-left {
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.evento-right {
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.evento h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.distancia {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Botón */
+/* Botón estilo cartel */
+/* Botón estilo cartel grande */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #e20c0c;
+  padding: 18px 60px;   /* más alto y ancho */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;      /* texto más grande */
+  position: relative;
+  box-shadow: 17px 17px 10px #fd0e0e; /* sombra más notoria */
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 1px;  /* más espacio entre letras */
+}
+
+/* Efecto hover: como si se “hundiera” */
+.btn:hover {
+  box-shadow: 9px 9px 10px #9b0505;
+  transform: translate(4px, 4px);
+  background: #9b0505;
+}
+
+
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #1cc54f;
+}
+
+footer .logo {
+  display: block;
+  margin: 10px auto;
+  height: 40px;
+}
