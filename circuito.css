@@ -1,0 +1,116 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { height: 100%; font-family: Arial, sans-serif; }
+
+
+.fondo {
+ background-color:black;
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+
+.menu {
+  width: 220px;
+  height: 100vh;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.menu .logo {
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+.menu .logo span {
+  color: #e90a7d;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.menu-list { list-style: none; }
+.menu-item { margin-bottom: 12px; }
+
+
+.menu-link {
+  display: block;
+  padding: 12px 15px 12px 32px;
+  background: #5b5b5b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background .25s ease, transform .15s ease;
+}
+
+
+.menu-item:nth-child(3n+1) .menu-link { transform: rotate(-1deg); }
+.menu-item:nth-child(3n+2) .menu-link { transform: rotate(2deg); }
+.menu-item:nth-child(3n+3) .menu-link { transform: rotate(-3deg); }
+
+
+.menu-item:nth-child(3n+1) .menu-link:hover { transform: rotate(-1deg) translateY(-2px); background: #e90a7d; }
+.menu-item:nth-child(3n+2) .menu-link:hover { transform: rotate(2deg) translateY(-2px); background: #e90a7d; }
+.menu-item:nth-child(3n+3) .menu-link:hover { transform: rotate(-3deg) translateY(-2px); background: #e90a7d; }
+
+
+.menu-link.activo {
+  background: #e90a7d;
+}
+
+
+.organiza img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 150px;   /* ancho que quieras */
+  height: auto;   /* mantiene proporción */
+  display: block;
+  margin: 0 auto; /* lo centra dentro del nav */
+}
+
+.contenido {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* mantiene la imagen centrada */
+  padding: 20px;
+  margin-left: -40px;       /* desplaza todo el contenido hacia la izquierda */
+  overflow-y: auto;
+  margin-top: 50px;
+}
+
+.mapa{
+  
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.texto-circuito2 {
+  max-width: 800px;         /* ancho máximo */
+  margin: 20px 0 20px 0;    /* arriba y abajo 20px, izquierda 0 para que se acerque al borde izquierdo */
+  padding-left: 20px;       /* margen interno hacia la izquierda */
+  text-align: left;          /* alinea el texto a la izquierda */
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

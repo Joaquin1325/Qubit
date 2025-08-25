@@ -1,83 +1,83 @@
-/* Reset básico */
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
-html, body { height: 100%; font-family: Arial, sans-serif; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* Fondo */
-.fondo {
-    
-  background: url("Img/Talleres\ Don\ Bosco.png") no-repeat center center fixed;
-  background-size:cover;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
+  html, body { height: 100%; font-family: Arial, sans-serif; }
 
-/* Menú lateral */
-.menu {
-  width: 220px;
-  height: 100vh;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-/* Logo */
-.menu .logo {
-  font-size: 22px;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 24px;
-  line-height: 1.2;
-}
-.menu .logo span {
-  color: #e90a7d;
-  font-size: 28px;
-  font-weight: bold;
-}
+  .fondo {
+      
+    background: url("../Img/Talleres\ Don\ Bosco.png") no-repeat center center fixed;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
 
-/* Lista */
-.menu-list { list-style: none; }
-.menu-item { margin-bottom: 12px; }
 
-/* Enlaces */
-.menu-link {
-  display: block;
-  padding: 12px 15px 12px 32px;
-  background: #5b5b5b;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background .25s ease, transform .15s ease;
-}
+  .menu {
+    width: 220px;
+    height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-/* Rotaciones automáticas: cada 3 se repite */
-.menu-item:nth-child(3n+1) .menu-link { transform: rotate(-1deg); }
-.menu-item:nth-child(3n+2) .menu-link { transform: rotate(2deg); }
-.menu-item:nth-child(3n+3) .menu-link { transform: rotate(-3deg); }
 
-/* Hover */
-.menu-item:nth-child(3n+1) .menu-link:hover { transform: rotate(-1deg) translateY(-2px); background: #e90a7d; }
-.menu-item:nth-child(3n+2) .menu-link:hover { transform: rotate(2deg) translateY(-2px); background: #e90a7d; }
-.menu-item:nth-child(3n+3) .menu-link:hover { transform: rotate(-3deg) translateY(-2px); background: #e90a7d; }
+  .menu .logo {
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+  .menu .logo span {
+    color: #e90a7d;
+    font-size: 28px;
+    font-weight: bold;
+  }
 
-/* Activo */
-.menu-link.activo {
-  background: #e90a7d;
-}
 
-/* Logo abajo */
-.organiza img {
-  width: 70px;
-  display: block;
-  margin: 0 auto;
-}
+  .menu-list { list-style: none; }
+  .menu-item { margin-bottom: 12px; }
 
-.logo img {
-  width: 150px;   /* ancho que quieras */
-  height: auto;   /* mantiene proporción */
-  display: block;
-  margin: 0 auto; /* lo centra dentro del nav */
-}
+
+  .menu-link {
+    display: block;
+    padding: 12px 15px 12px 32px;
+    background: #5b5b5b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background .25s ease, transform .15s ease;
+  }
+
+
+  .menu-item:nth-child(3n+1) .menu-link { transform: rotate(-1deg); }
+  .menu-item:nth-child(3n+2) .menu-link { transform: rotate(2deg); }
+  .menu-item:nth-child(3n+3) .menu-link { transform: rotate(-3deg); }
+
+
+  .menu-item:nth-child(3n+1) .menu-link:hover { transform: rotate(-1deg) translateY(-2px); background: #e90a7d; }
+  .menu-item:nth-child(3n+2) .menu-link:hover { transform: rotate(2deg) translateY(-2px); background: #e90a7d; }
+  .menu-item:nth-child(3n+3) .menu-link:hover { transform: rotate(-3deg) translateY(-2px); background: #e90a7d; }
+
+
+  .menu-link.activo {
+    background: #e90a7d;
+  }
+
+
+  .organiza img {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo img {
+    width: 150px;   
+    height: auto;   
+    display: block;
+    margin: 0 auto; 
+  }

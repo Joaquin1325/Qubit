@@ -9,25 +9,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: url("Img/CORRE\ BOSCO\ \(1\).png") no-repeat center center fixed;
-  background-size: cover; /* hace que la imagen cubra todo */
-  height: 100vh;          /* ocupa toda la altura de la pantalla */
+  background: url("../Img/CORRE_BOSCO_1.png.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
 }
-
 
 /* Contenedor */
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Header */
 header h1 {
-  font-size: 80px;
+  font-size: 6vw; /* proporcional */
   font-weight: bold;
-  margin-top: 20px;
+  text-align: center;
 }
 
 header .white {
@@ -35,27 +38,25 @@ header .white {
 }
 
 header .pink {
-  color: #e61414;
-  font-size: 120px;
-  letter-spacing: -5px;
+  font-size: 10vw;
   background: linear-gradient(to bottom, #e60606, #e90a0a 70%, transparent);
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .subtitulo {
-  font-size: 40px;
-  letter-spacing: 15px;
-  margin-top: -20px;
+  font-size: 4vw;
+  letter-spacing: 0.5vw;
+  margin-top: -10px;
+  text-align: center;
 }
 
 /* Imagen central */
 .imagen-central img {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 500px;
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  height: auto;
   z-index: 2;
 }
 
@@ -64,7 +65,7 @@ header .pink {
   position: absolute;
   width: 250px;
   padding: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .evento-left {
@@ -79,50 +80,33 @@ header .pink {
   transform: translateY(-50%);
 }
 
-.evento h2 {
-  font-size: 30px;
-  margin: 10px 0;
-}
-
-.distancia {
-  font-weight: bold;
-  font-size: 18px;
-}
-
 /* Botón */
-/* Botón estilo cartel */
-/* Botón estilo cartel grande */
 .btn {
   display: inline-block;
   margin-top: 20px;
   background: #e20c0c;
-  padding: 18px 60px;   /* más alto y ancho */
+  padding: 15px 40px;
   color: white;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 24px;      /* texto más grande */
+  font-size: 20px;
   position: relative;
-  box-shadow: 17px 17px 10px #fd0e0e; /* sombra más notoria */
+  box-shadow: 7px 7px 10px #fd0e0e;
   transition: all 0.2s ease-in-out;
-  letter-spacing: 1px;  /* más espacio entre letras */
+  letter-spacing: 1px;
+  border-radius: 8px;
 }
 
-/* Efecto hover: como si se “hundiera” */
 .btn:hover {
-  box-shadow: 9px 9px 10px #9b0505;
-  transform: translate(4px, 4px);
+  box-shadow: 4px 4px 8px #9b0505;
+  transform: translate(2px, 2px);
   background: #9b0505;
 }
 
-
-
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-size: 14px;
   color: #1cc54f;
 }
@@ -131,4 +115,45 @@ footer .logo {
   display: block;
   margin: 10px auto;
   height: 40px;
+}
+
+/* ================== */
+/*   MEDIA QUERIES    */
+/* ================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .evento {
+    max-width: 200px;
+  }
+  .btn {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .evento {
+    position: static;   /* ya no absolutos */
+    transform: none;
+    margin: 15px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .imagen-central img {
+    max-width: 90%;
+  }
+
+  header h1 { font-size: 8vw; }
+  header .pink { font-size: 12vw; }
+  .subtitulo { font-size: 5vw; }
 }
